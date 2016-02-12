@@ -16,10 +16,10 @@ body, html {
 
 .wrapper {
   width: 1200px;
-  height: 800px;
+  height: 1200px;
   margin: 0 auto;
   padding: 0;
-  background: #EDEFF0;
+  background: #f9f9f9;
 }
 
 
@@ -71,11 +71,11 @@ body, html {
   /*opacity: .8;*/
 }
 
-hr {
+/*hr {
   position: relative;
   width: 650px;
   margin-top: 135px;
-}
+}*/
 
 /*.captionTop {
   position: relative;
@@ -91,6 +91,7 @@ hr {
 
 .learnMore {
   position: relative;
+  top: 120px;
   color: white;
   font-size: 18px;
   text-align: center;
@@ -106,25 +107,79 @@ hr {
   padding-bottom: 15px;
 }
 
-.learnMore a, .learnMore a:hover, .learnMore a:visited {
+.learnMore a, .learnMore a:visited {
   text-decoration: none;
   font-weight: bold;
   color: #5F3742;
 }
 
+.learnMore a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: #64BCDC;
+}
+
 .timeIsNow {
-  text-align: center;
   color: grey;
   padding: 25px 50px;
 }
 
 #ship {
   float: right;
+  padding-bottom: 15px;
   width: 250px;
   height: auto;
 }
 
 .hrSeparator {
+
   margin-top: 50px;
   width: 100%;
+}
+ .tableDiv {
+   text-align: left;
+   padding: 3px 50px;
+ }
+
+table {
+  border-spacing: 0.5rem;
+  border-collapse: collapse;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
+  font-family: sans-serif;
+  width: 1100px;
+}
+
+td > img {
+  max-width: 50px;
+  border-radius: 50%;
+  align-items: center;
+}
+
+th {
+  border-left: 1px solid #f9f9f9;
+  background-color: grey;
+  padding: 10px;
+  color: white;
+}
+
+th:first-of-type {
+  background-color: #f9f9f9;
+}
+
+td {
+  border-top: 1px solid grey;
+  border-left: 1px solid grey;
+  padding: 12px;
+  color: #5E5D52;
+  font-weight: normal;
+}
+
+tr:nth-child(2n+1) {
+  background-color: #EFEFEE;
+}
+
+td:nth-child(1) {
+  background-color: #111018;
 }
