@@ -16,9 +16,10 @@ body, html {
 
 .wrapper {
   width: 1200px;
-  height: 1200px;
+  height: 1750px;
   margin: 0 auto;
   padding: 0;
+  padding-top: 25px;
   background: #f9f9f9;
 }
 
@@ -30,7 +31,9 @@ body, html {
   background-size: cover;
   background-position: center;
   height: 400px;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
   padding: 10px;
   /*position: relative;*/
 }
@@ -41,57 +44,48 @@ body, html {
   float: right;
   margin-right: 15px;
   padding: 10px;
-  margin-top: 10px;
+  margin-top: 20px;
   border-radius: 15px;
   border: 1px solid white;
 }
 
-.navigation a, .navigation a:hover, .navigation a:visited {
+.navigation a, .navigation a:visited {
   text-decoration: none;
   color: white;
 }
+.navigation a:hover {
+  text-decoration: none;
+  color: #FDD071;
+}
 
-#logo {
-  display: inline-block;;
+#logoHeader {
   color: white;
   font-size: 60px;
-  padding-left: 25px;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
+  padding-right: 50px;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 
 .fullCaption {
   color: white;
   text-align: center;
-  padding-top: 35px;
-  /*text-shadow: 0px 0px 2px #000000;*/
-  /*opacity: .8;*/
+  /*padding-top: px;*/
 }
 
-/*hr {
-  position: relative;
-  width: 650px;
-  margin-top: 135px;
-}*/
 
-/*.captionTop {
-  position: relative;
-  font-size: 50px;
-  left: auto;
-}*/
-
-.captionBottom {
+.caption {
   position: absolute;
   font-size: 100px;
-  left: 270px;
+  top: 115px;
+  left: 240px;
 }
 
 .learnMore {
   position: relative;
-  top: 120px;
+  top: 150px;
   color: white;
   font-size: 18px;
   text-align: center;
@@ -120,33 +114,19 @@ body, html {
 }
 
 .timeIsNow {
+  position: relative;
   color: grey;
   padding: 25px 50px;
+  text-align: center;
 }
 
-#ship {
-  float: right;
-  padding-bottom: 15px;
-  width: 250px;
-  height: auto;
-}
-
-.hrSeparator {
-
-  margin-top: 50px;
-  width: 100%;
-}
  .tableDiv {
-   text-align: left;
    padding: 3px 50px;
  }
 
 table {
   border-spacing: 0.5rem;
   border-collapse: collapse;
-  border-left: 1px solid grey;
-  border-right: 1px solid grey;
-  border-bottom: 1px solid grey;
   font-family: sans-serif;
   width: 1100px;
 }
@@ -158,28 +138,135 @@ td > img {
 }
 
 th {
-  border-left: 1px solid #f9f9f9;
-  background-color: grey;
+  background-color: #f9f9f9;
   padding: 10px;
-  color: white;
+  padding-bottom: 20px;
+  color: grey;
+  font-weight: normal;
+  text-align: center;
 }
 
-th:first-of-type {
-  background-color: #f9f9f9;
-}
 
 td {
   border-top: 1px solid grey;
   border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
+  text-align: center;
   padding: 12px;
-  color: #5E5D52;
+  color: grey;
   font-weight: normal;
 }
 
+tr:nth-child(1n+1) {
+  background-color: #eaf0ff;
+}
+
 tr:nth-child(2n+1) {
-  background-color: #EFEFEE;
+  background-color: #fce0e3;
 }
 
 td:nth-child(1) {
   background-color: #111018;
 }
+
+.gallery {
+  text-align: center;
+  color: grey;
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 50px;
+}
+
+.gallery h2 {
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+
+.gallery img {
+  /*padding: 10px;*/
+  float: left;
+  max-width: 250px;
+  overflow: hidden;
+}
+
+
+.footer {
+  padding-top: 45px;
+  clear: both;
+  color: grey;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: .5;
+}
+
+
+.hrSeparator {
+  margin-top: 25px;
+  width: 93%;
+}
+
+#copyright {
+  text-align: center;
+  padding-top: 2px;
+  font-size: 10px;
+}
+
+#logoFooter1 {
+  float: left;
+  padding-right: 15px;
+  font-size: 15px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+#logoFooter2 {
+  float: right;
+  font-size: 15px;
+  padding-right: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MOSTLY TRASH PROBABLY*/
+
+/*#ship {
+  float: right;
+  padding-bottom: 15px;
+  width: 250px;
+  height: auto;
+}*/
+/*hr {
+position: relative;
+width: 650px;
+margin-top: 135px;
+}*/
+
+/*.captionTop {
+position: relative;
+font-size: 50px;
+left: auto;
+}*/
